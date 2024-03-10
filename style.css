@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    line-height: 100vh;
+    margin: 0;
+    font-family: 'Madimi One';
+    font-size: 6em;
+    position: relative;
+    z-index: 1; /* Ensure the h1 appears above other elements */
+}
+
+img{
+    height: 5em;
+    width: 5em;
+}
+
+/* CSS */
+.div_container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.floating-gif {
+    position: absolute;
+    animation: float 5s infinite linear;
+}
+
+@keyframes float {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    25% {
+        transform: translate(-50%, -50%) rotate(90deg);
+    }
+    50% {
+        transform: translate(-100%, -100%) rotate(180deg);
+    }
+    75% {
+        transform: translate(-150%, -150%) rotate(270deg);
+    }
+    100% {
+        transform: translate(-200%, -200%) rotate(360deg);
+    }
+}
