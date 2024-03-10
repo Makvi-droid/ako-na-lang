@@ -3,6 +3,11 @@ body {
     padding: 0;
 }
 
+audio{
+    align-items: center;
+    justify-content: center;
+}
+
 h1 {
     text-align: center;
     line-height: 100vh;
